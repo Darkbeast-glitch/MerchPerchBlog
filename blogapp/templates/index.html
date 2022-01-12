@@ -1,0 +1,149 @@
+{% extends "base.html" %} {% block content %}
+<style>
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    background-image: url("https://source.unsplash.com/random/?computers,programmers,hackers");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .head_text {
+    color: white;
+  }
+.btn{
+  position:relative ;
+  border: none;
+  transition:  all .4s ease-in;
+}
+.btn::before,
+.btn::after{
+  position: relative;
+  content: "";
+  z-index: 1;
+}
+
+.btn:hover{
+  background: #ff96ad;
+  box-shadow: 0 0 5px #ff96ad,0 0 25px #ff96ad ;
+}
+  .card {
+    box-shadow: 0 16px 48px #e3e7eb;
+  }
+  .typewriter {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+  .masthead {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .head__name{
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+
+  }
+  .head__name:hover{
+    background: #ff96ad;
+     box-shadow: 0 0 5px #ff96ad,0 0 25px #ff96ad ;
+
+  }
+</style>
+
+<header class="masthead">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h3 class="site-heading my-4 mt-3 text-white head__name" >
+            <i class="fas fa-blog"></i>
+            Merch Perch Blog - Anything you need to know
+          </h3>
+          <p class="text-light typewriter">
+            From Business to Lifestyle to Music to Environment - Find anything
+            Here!
+          </p>
+
+          <small style="color: aliceblue"
+            >Created By : Boakye Nana Acheampong Julius</small
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <!-- Blog Entries Column -->
+    <div class="col-md-8 mt-3 left">
+      {% for post in post_list %}
+      <div class="card mb-4">
+        <div class="card-body">
+         
+          <h2 class="card-title">{{ post.title }}</h2>
+          <p class="card-text text-muted h6">
+            <i class="fas fa-user"></i>
+            {{ post.author }} |
+            <i class="fas fa-clock" style="padding-right: 2px"></i>
+            {{post.created_on}}
+          </p>
+          <p class="card-text">{{post.content|slice:":200" }}</p>
+          <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary"
+            >Read More &rarr;</a
+          >
+        </div>
+        
+      </div>
+      {% endfor %}
+    </div>
+    {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+  </div>
+</div>
+{% if post_list.has_other_pages %}
+  <nav aria-label="Page navigation conatiner"></nav>
+  <ul class="pagination justify-content-center">
+    {% if post_list.has_previous %}
+    <li><a href="?page={{ post_list.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+    {% endif %}
+    {% if post_list.has_next %}
+    <li><a href="?page={{ post_list.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+   {% endif %}
+  </ul>
+  </nav>
+</div>
+{% endif %}
+
+{%endblock%}

@@ -22,6 +22,7 @@ class Post(models.Model):
 
     class Meta:
         ordering = ['-created_on']
+        verbose_name_plural = "Post"
 
     def __str__(self):
         return self.title
@@ -38,6 +39,19 @@ class Comment(models.Model):
 
     class Meta:
         ordering = ['created_on']
+        verbose_name_plural = "Comment"
 
     def __str__(self):
         return 'Comment {} by {}'.format(self.body, self.name)
+
+
+class AboutUs(models.Model):
+    header = models.CharField(max_length=500)
+    about_us = models.TextField(max_length=100000)
+
+    class Meta:
+
+        verbose_name_plural = "About Us"
+
+    def __str__(self):
+        return self.header

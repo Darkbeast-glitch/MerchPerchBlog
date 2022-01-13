@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Post
+from .models import Post, AboutUs
 from django.views import generic
 from .forms import CommentForm
 from django.shortcuts import render, get_object_or_404
@@ -12,6 +12,7 @@ from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 def PostList(request):
     object_list = Post.objects.filter(status=1).order_by('-created_on')
     post = Post.objects.all()
+    aboutus = AboutUs.objects.all()
     paginator = Paginator(object_list, 3)  # 3 posts in each page
     page = request.GET.get('page')
     try:
@@ -25,7 +26,7 @@ def PostList(request):
     return render(request,
                   'index.html',
                   {'page': page,
-                   'post_list': post_list, 'post': post})
+                   'post_list': post_list, 'post': post, 'aboutus': aboutus})
 
 
 def post_detail(request, slug):

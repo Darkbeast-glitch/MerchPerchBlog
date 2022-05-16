@@ -84,3 +84,6 @@ def page_not_found_view(request,exception):
 
 def Crypto_stacks(request):
     return render (request, 'index_crypto.html')
+
+def Simlock(request):
+    return render (request, 'index_simlock.html')

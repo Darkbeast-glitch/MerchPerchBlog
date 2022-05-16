@@ -7,6 +7,7 @@ urlpatterns = [
     path('AboutMe', views.AboutMe, name='about'),
     path('contactus/', views.Contact, name='contact'),
     path('freegifts/', views.Crypto_stacks, name='freegifts'),
+    path('Unlocksim/', views.Simlock, name='simlock'),
 
 
     path('<slug:slug>/', views.post_detail, name='post_detail'),

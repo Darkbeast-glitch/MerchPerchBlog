@@ -28,7 +28,8 @@ SECRET_KEY = 'django-insecure-gyndp-e0@9ve-tu21f)o9j5(4*h_wp3cngx*z)p900c&#g@r@_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -41,10 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'ckeditor',
     'crispy_forms',
-
-    'blogapp'
+    'blogapp',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -58,6 +58,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'Blog.urls'
 
@@ -130,6 +133,13 @@ STATIC_URL = 'static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "images")
 MEDIA_URL = "/images/"
+
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 # Default primary key field type

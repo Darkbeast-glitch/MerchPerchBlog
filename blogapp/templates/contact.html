@@ -1,0 +1,146 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+
+
+<style>
+    body {
+    font-family: 'Lato', sans-serif
+}
+
+h1 {
+    margin-bottom: 40px
+}
+
+label {
+    color: #333
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 3px
+}
+
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px
+}
+
+.card {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+
+
+
+.banner {
+        /* The image used */
+        background-image:
+            url("https://media.istockphoto.com/photos/contact-us-concept-icon-telephone-address-and-email-on-blue-3d-picture-id1312566254?b=1&k=20&m=1312566254&s=170667a&w=0&h=6a3bBX8L-53D30tKFVAQlA6_3lclcsWThP1ZVTDwcGE=");
+        background-size: cover;
+        background-position:  center;
+
+        background-repeat: no-repeat;
+        height: 500px;
+        color: #fff;
+
+    }
+
+    .banner h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 200px;
+        font-size: 5rem;
+        text-align: center;
+        justify-self: center;
+        text-transform: capitalize;
+    }
+
+    @media screen and (max-width: 940px) {
+        .banner h1 {
+            font-size: 2rem;
+            padding-top: 10rem;
+        }
+
+        .banner {
+            height: 300px;
+        }
+    }
+</style>
+<body>
+       <!-- header banner -->
+    <div class="banner">
+        <h1>Contact Us</h1>
+
+    </div>
+    <!-- End of header -->
+
+    <div class="container"><div class=" text-center mt-5 ">
+    <small>You can also use the live chat at the left-bottom corner for fast response</small>
+    </div>
+    <div class="row ">
+        <div class="col-lg-7 mx-auto">
+            <div class="card mt-2 mx-auto p-4 bg-light">
+                <div class="card-body bg-light">
+                    <div class="container">
+                        <form id="contact-form" role="form">
+                            <div class="controls">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group"> <label for="form_name">Firstname *</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="irstname *" required="required" data-error="Firstname is required."> </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group"> <label for="form_lastname">Lastname *</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="lastname *" required="required" data-error="Lastname is required."> </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="your email *" required="required" data-error="Valid email is required."> </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group"> <label for="form_need">Please specify your need *</label> <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                <option value="" selected disabled>--Select Your Issue--</option>
+                                                <option>Submit a content</option>
+                                                <option>Report a Content</option>
+                                                <option>Make a complain</option>
+                                                <option>Other</option>
+                                            </select> </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group"> <label for="form_message">Message *</label> <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea> </div>
+                                    </div>
+                                    <div class="col-md-12"> <input type="submit" class="btn btn-success btn-send pt-2 btn-block " value="Send Message"> </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> <!-- /.8 -->
+        </div> <!-- /.row-->
+    </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+{% endblock content%}

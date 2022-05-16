@@ -1,0 +1,26 @@
+@import "./variables";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+.banner {
+    background: url("../imgs/background.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart {
+    background: url("../imgs/trends.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.feather-lg {
+    width: 38px;
+    height: 38px;
+    color: $primary;
+}

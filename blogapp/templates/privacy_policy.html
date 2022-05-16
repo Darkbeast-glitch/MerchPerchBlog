@@ -1,0 +1,218 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+<div class="card" style="width: 100%">
+  <img
+    class="card-img-top"
+    src="data:image/png;base64,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"
+    alt="Card image cap"
+  />
+  <div class="card-body">
+    <h3 class="card-title" style="text-align:center">Privacy Policy for Merch Perch Business</h3>
+    <h5 class="card-text">
+      Privacy Policy for Merch Perch Business At Merch Perch Blog, accessible
+      from https://merchpechblog.pythonanywhere.com/, one of our main priorities
+      is the privacy of our visitors. This Privacy Policy document contains
+      types of information that is collected and recorded by Merch Perch Blog
+      and how we use it.
+
+
+      If you have additional questions or require more
+      information about our Privacy Policy, do not hesitate to contact us.
+
+
+      This Privacy Policy applies only to our online activities and is valid for
+      visitors to our website with regards to the information that they shared
+      and/or collect in Merch Perch Blog. This policy is not applicable to any
+      information collected offline or via channels other than this website. Our
+      Privacy Policy was created with the help of the  Privacy Policy
+      Generator.
+
+
+
+      <h3>Consent</h3>
+
+
+
+
+      By using our website, you hereby consent to our Privacy
+      Policy and agree to its terms.
+
+
+
+
+
+      <h3>Information we collect</h3>
+
+
+
+
+      The personal
+      information that you are asked to provide, and the reasons why you are
+      asked to provide it, will be made clear to you at the point we ask you to
+      provide your personal information. If you contact us directly, we may
+      receive additional information about you such as your name, email address,
+      phone number, the contents of the message and/or attachments you may send
+      us, and any other information you may choose to provide. When you register
+      for an Account, we may ask for your contact information, including items
+      such as name, company name, address, email address, and telephone number.
+
+
+
+
+      <h3>How we use your information</h3>
+
+
+
+      We use the information we collect in various
+      ways, including to:
+
+
+      <ul>
+          <li>Provide, operate, and maintain our website</li>
+          <li>Improve,personalize, and expand our website </li>
+          <li>Understand and analyze how you use our website</li>
+          <li>Develop new products, services, features, and functionality</li>
+          <li> Communicate with you, either directly or through one of our partners,
+      including for customer service, to provide you with updates and other
+      information relating to the website, and for marketing and promotional
+      purposes </li>
+          <li>Send you emails</li>
+          <li>Find and prevent fraud</li>
+
+      </ul>
+
+
+
+
+       <h3>Log Files</h3>
+
+
+
+
+       Merch Perch Blog
+      follows a standard procedure of using log files. These files log visitors
+      when they visit websites. All hosting companies do this and a part of
+      hosting services' analytics. The information collected by log files
+      include internet protocol (IP) addresses, browser type, Internet Service
+      Provider (ISP), date and time stamp, referring/exit pages, and possibly
+      the number of clicks. These are not linked to any information that is
+      personally identifiable. The purpose of the information is for analyzing
+      trends, administering the site, tracking users' movement on the website,
+      and gathering demographic information.
+
+
+
+
+
+      <h3>Advertising Partners Privacy Policies</h3>
+
+
+
+
+
+       You may consult this list to find the Privacy Policy for each of
+      the advertising partners of Merch Perch Blog.
+
+      Third-party ad servers or ad
+      networks uses technologies like cookies, JavaScript, or Web Beacons that
+      are used in their respective advertisements and links that appear on Merch
+      Perch Blog, which are sent directly to users' browser. They automatically
+      receive your IP address when this occurs. These technologies are used to
+      measure the effectiveness of their advertising campaigns and/or to
+      personalize the advertising content that you see on websites that you
+      visit. Note that Merch Perch Blog has no access to or control over these
+      cookies that are used by third-party advertisers.
+
+
+
+      <h3>Third Party Privacy
+      Policies </h3>
+
+
+
+
+      Merch Perch Blog's Privacy Policy does not apply to other
+      advertisers or websites. Thus, we are advising you to consult the
+      respective Privacy Policies of these third-party ad servers for more
+      detailed information. It may include their practices and instructions
+      about how to opt-out of certain options.
+
+
+      You can choose to disable cookies
+      through your individual browser options. To know more detailed information
+      about cookie management with specific web browsers, it can be found at the
+      browsers' respective websites.
+
+
+      <h3>CCPA Privacy Rights (Do Not Sell My
+      Personal Information)</h3>
+
+
+
+
+
+      Under the CCPA, among other rights, California
+      consumers have the right to: Request that a business that collects a
+      consumer's personal data disclose the categories and specific pieces of
+      personal data that a business has collected about consumers.
+
+      Request that
+      a business delete any personal data about the consumer that a business has
+      collected. Request that a business that sells a consumer's personal data,
+      not sell the consumer's personal data. If you make a request, we have one
+      month to respond to you.
+
+      If you would like to exercise any of these
+      rights, please contact us.
+
+      <h3>GDPR Data Protection Rights</h3>
+
+      We would like to
+      make sure you are fully aware of all of your data protection rights. Every
+      user is entitled to the following: The right to access – You have the
+      right to request copies of your personal data. We may charge you a small
+      fee for this service.
+
+      The right to rectification – You have the right to
+      request that we correct any information you believe is inaccurate. You
+      also have the right to request that we complete the information you
+      believe is incomplete.
+
+
+      The right to erasure – You have the right to
+      request that we erase your personal data, under certain conditions. The
+      right to restrict processing – You have the right to request that we
+      restrict the processing of your personal data, under certain conditions.
+      The right to object to processing – You have the right to object to our
+      processing of your personal data, under certain conditions. The right to
+      data portability – You have the right to request that we transfer the data
+      that we have collected to another organization, or directly to you, under
+      certain conditions. If you make a request, we have one month to respond to
+      you. If you would like to exercise any of these rights, please contact us.
+
+
+
+      <h3>Children's Information</h3>
+
+
+
+
+
+
+
+       Another part of our priority is adding protection
+      for children while using the internet. We encourage parents and guardians
+      to observe, participate in, and/or monitor and guide their online
+      activity. Merch Perch Blog does not knowingly collect any Personal
+      Identifiable Information from children under the age of 13. If you think
+      that your child provided this kind of information on our website, we
+      strongly encourage you to contact us immediately and we will do our best
+      efforts to promptly remove such information from our records.
+    </h5>
+    <a href="{% url 'home'%}" class="btn btn-primary">Take Me Home</a>
+  </div>
+</div>
+
+{% endblock content%}

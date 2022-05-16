@@ -13,7 +13,7 @@ def PostList(request):
     object_list = Post.objects.filter(status=1).order_by('-created_on')
     post = Post.objects.all()
     aboutus = AboutUs.objects.all()
-    paginator = Paginator(object_list, 3)  # 3 posts in each page
+    paginator = Paginator(object_list, 5)  # 5 posts in each page
     page = request.GET.get('page')
     try:
         post_list = paginator.page(page)
@@ -27,6 +27,8 @@ def PostList(request):
                   'index.html',
                   {'page': page,
                    'post_list': post_list, 'post': post, 'aboutus': aboutus})
+
+
 
 
 def post_detail(request, slug):
@@ -52,3 +54,33 @@ def post_detail(request, slug):
                                            'comments': comments,
                                            'new_comment': new_comment,
                                            'comment_form': comment_form})
+
+
+
+
+
+
+
+def Privacy_Policy(request):
+    context = {}
+    return render (request, 'privacy_policy.html', context)
+
+    #aboutme
+
+def AboutMe(request):
+    context = {}
+    return render (request, 'aboutme.html',context)
+
+def Contact(request):
+    context = {}
+
+    return render(request, 'contact.html', context)
+
+
+
+def page_not_found_view(request,exception):
+    return render (request, '404.html', status=404)
+
+
+def Crypto_stacks(request):
+    return render (request, 'index_crypto.html')

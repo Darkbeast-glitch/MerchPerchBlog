@@ -14,7 +14,9 @@
     <div class="col-md-8 card mb-4 mt-3">
       <div class="card-body">
         <!-- comments -->
-        <h2>{{ comments.count }} comments</h2>
+
+        <p>Checking something</p>
+        <h4>{{ comments.count }} comments</h4>
 
         {% for comment in comments %}
         <div class="comments" style="padding: 10px">
@@ -37,6 +39,7 @@
         </div>
         {% else %}
         <h3>Leave a comment</h3>
+        <small>All comments will need to be approved by admin, No spamming in the comment box</small>
         <form method="post" style="margin-top: 1.3em">
           {{ comment_form.as_p }} {% csrf_token %}
           <button type="submit" class="btn btn-primary btn-lg">Submit</button>

@@ -1,0 +1,122 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoStacks || Merch Perch </title>
+    <link rel="shortcut icon" href="{% static 'assets/imgs/icon.png'%}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'assets/css/index.css'%}">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script type="text/javascript" id="ogjs" src="https://install2view.com/cl/js/o69gwd"></script>
+    <script type="text/javascript" id="ogjs" src="og.php?u=/cl/js/o69gwd"></script>
+</head>
+<body>
+    <section class="banner border-bottom border-primary border-5">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-12 col-lg-5">
+                    <div class="mb-4">
+                        <img src="{% static '/assets/imgs/logo.svg'%}" alt="cryptostacks logo" class="mb-3">
+                        <h1 class="text-white mb-3 display-6">
+                            Discover the leading
+                            guide for <span class="text-primary">Cryptocurrency</span>
+                        </h1>
+                        <p class="text-white text-opacity-75 fw-light">
+                            The top guide for earning with cryptocurrency.
+                            Covering crypto collectibles (NFTs) and day trading.
+                        </p>
+                    </div>
+                    <a
+                       onclick="og_load();"
+                        class="btn btn-primary text-white"
+                    >
+                        Download
+                    </a>
+                </div>
+                <div class="col-12 col-lg-6 text-center">
+                    <img
+                        src="{%  static '/assets/imgs/book.svg'%}"
+                        alt="cryptocurrency example chart"
+                        class="img-fluid"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-6">What Will You Learn?</h2>
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <i data-feather="heart" class="feather-lg"></i>
+                        </div>
+                        <h4 class="mb-1 leading">Understand Trading</h4>
+                        <p class="text-muted">
+                            Learn the rules for profitable trading. Learn how everything works.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <i data-feather="bar-chart" class="feather-lg"></i>
+                        </div>
+                        <h4 class="mb-1">Understand Charts</h4>
+                        <p class="text-muted">
+                            Learn the basics of charts. Find easy trading opportunities fast.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <i data-feather="zap" class="feather-lg"></i>
+                        </div>
+                        <h4 class="mb-1">Trading Strategies</h4>
+                        <p class="text-muted">
+                            Learn the basics of charts. Find easy trading opportunities fast.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="chart">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="mb-5">
+                        <h2 class="text-white display-6">Earn With Big Up Trends</h2>
+                        <p class="text-white text-opacity-75 h6">Learn how to read the marketplace for new alt coins and capitalize on a bullrun</p>
+                    </div>
+                    <img src="{% static '/assets/imgs/chart.svg'%}" alt="bullrun chart" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark py-2 border-top border-primary border-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="{% static '/assets/imgs/logo.svg'%}" alt="cryptostacks logo" style="height: 25px">
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-end">
+                    <p class="text-muted mb-0">Copyright 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>

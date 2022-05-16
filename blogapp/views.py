@@ -87,3 +87,39 @@ def Crypto_stacks(request):
 
 def Simlock(request):
     return render (request, 'index_simlock.html')
+
+
+def GiftCardHome(request):
+    return render (request, 'gitcards.html')
+
+def AmazonCard(request):
+    return render (request, 'amazon.html')
+
+
+def EbayCard(request):
+    return render (request, 'ebay.html')
+
+
+def Facebook(request):
+    return render (request, 'facebook.html')
+
+def Googleplay(request):
+    return render (request, 'googleplay.html')
+
+
+def Itunes(request):
+    return render (request, 'itunes.html')
+
+
+def Playstation(request):
+    return render (request, 'playstation.html')
+
+def Steam(request):
+    return render (request, 'steam.html')
+
+def Xbox(request):
+    return render (request, 'xbox.html')
+
+
+
+

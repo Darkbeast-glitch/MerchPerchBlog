@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html>
   
@@ -9,27 +10,27 @@
     <base />
     
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />-->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="{% static 'assets/favicon.ico'%}">
     
     <meta name="author" content="index.html"/>
     <meta name="description" content="This is a brand new website which will give you the opportunity to get free Gift Cards. By having a Gift Card you will be given the opportunity to purchase games and other apps from online stores."/>
     
     <meta property="og:description" content="This is a brand new website which will give you the opportunity to get free Gift Cards. By having a Gift Card you will be given the opportunity to purchase games and other apps from online stores."/>
-    <meta property="og:image" content="resources/img/facebook.png"/>
+    <meta property="og:image" content="{% static 'assets/resources/img/facebook.png'%}"/>
     <meta property="og:title" content="Free Google Play Gift Cards"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="index.html"/>
     
     <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="resources/stylead21.css?version=4"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/resources/stylead21.css?version=4'%}"/>
     
     
     
-    <script type="text/javascript" src="resources/jqueryad21.js?version=4"></script>
-    <script type="text/javascript" src="resources/pluginsad21.js?version=4"></script>
+    <script type="text/javascript" src="{% static 'assets/resources/jqueryad21.js?version=4'%}"></script>
+    <script type="text/javascript" src="{% static 'assets/resources/pluginsad21.js?version=4'%}"></script>
     
-    <script type="text/javascript" src="resources/mainad21.js?version=4"></script>
+    <script type="text/javascript" src="{% static 'assets/resources/mainad21.js?version=4'%]"></script>
 
     
   </head>
@@ -38,7 +39,7 @@
       <div id="sky"><div id="skyback"></div></div>
       <div id="center">
         
-        <h1 id="logo"><a href="index.html">Free Gift Card</a></h1>
+        <h1 id="logo"><a href="{% url 'GiftCard'%}">Free Gift Card</a></h1>
         <div id="title"><span>Psst! Hey there!</span><h2>Do you want some free Google Play Gift Cards?</h2></div>
         <div id="man">
           <div id="head"></div>
@@ -116,7 +117,7 @@
   <div id="whclick"></div>
   <div id="whdesc">Your code is found and ready for use. You must verify to get complete code.</div>
   <div id="whcontent">
-<iframe src="button.html" frameborder="0" hspace="0" scrolling="no" style="width:100%;margin-top:5px;"></iframe></div>
+<iframe src="{% url 'button'%}" frameborder="0" hspace="0" scrolling="no" style="width:100%;margin-top:5px;"></iframe></div>
 </div>
         </div>
       </div>

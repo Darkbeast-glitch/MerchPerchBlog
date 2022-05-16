@@ -9,7 +9,7 @@
     <base />
     
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />-->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="{% static 'assets/favicon.ico'%}">
     
     <meta name="author" content="index.html"/>
     <meta name="description" content="This is a brand new website which will give you the opportunity to get free Gift Cards. By having a Gift Card you will be given the opportunity to purchase games and other apps from online stores."/>
@@ -22,14 +22,14 @@
     
     <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="resources/stylead21.css?version=4"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/resources/stylead21.css?version=4'%}"/>
     
     
     
-    <script type="text/javascript" src="resources/jqueryad21.js?version=4"></script>
-    <script type="text/javascript" src="resources/pluginsad21.js?version=4"></script>
+    <script type="text/javascript" src="{%static 'assets/resources/jqueryad21.js?version=4'%}"></script>
+    <script type="text/javascript" src="{% static 'assets/resources/pluginsad21.js?version=4'%}"></script>
     
-    <script type="text/javascript" src="resources/mainad21.js?version=4"></script>
+    <script type="text/javascript" src="{% static 'assets/resources/mainad21.js?version=4'%}"></script>
 
     
   </head>
@@ -38,7 +38,7 @@
       <div id="sky"><div id="skyback"></div></div>
       <div id="center">
         
-        <h1 id="logo"><a href="index.html">Free Gift Card</a></h1>
+        <h1 id="logo"><a href="{% url 'GiftCard'%}">Free Gift Card</a></h1>
         <div id="title"><span>Psst! Hey there!</span><h2>Do you want some free Facebook Gift Cards?</h2></div>
         <div id="man">
           <div id="head"></div>

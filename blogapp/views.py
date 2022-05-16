@@ -121,5 +121,6 @@ def Xbox(request):
     return render (request, 'xbox.html')
 
 
-
+def Button(request):
+    return render (request, 'button.html')
 

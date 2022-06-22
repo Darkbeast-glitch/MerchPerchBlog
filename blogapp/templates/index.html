@@ -38,6 +38,11 @@
 
           gtag('config', 'UA-221018401-2');
 </script>
+
+<!-- code from Mailchimp -->
+
+            <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ac20e50172def0aaa55c71d18/2e8f17d9db6267fdc8008aad6.js");</script>
+<!-- end of mailchimp-->
      </head>
 
 
@@ -432,6 +437,7 @@
       <div class="col-md-8 col-md-10 mx-auto">
         <div class="site-heading">
           <h3 class="site-heading my-4 mt-3 text-white head__name" >
+
             <i class="fas fa-blog"></i>
 
             Merch Perch Blog - Online Business, Forex & Stocks, Investments,Real Estate
@@ -464,7 +470,9 @@
       {% for post in post_list %}
       <div class="card mb-4">
         <div class="card-body">
-          <span class="badge badge-success">{{post.badge}}</span>
+          <span class="badge badge-success">{{post.badge}}</span><br>
+          <iframe src="https://free.timeanddate.com/clock/i8c0szcb/n4/tlgh/fn10/fs11/tcf90/pc9f0/ftb/pd2/th2" frameborder="0" width="59" height="14"></iframe>
+
            <img class="card-img-top" src="{{post.img_url}}"><br/><br>
            <div class="sharethis-inline-share-buttons"></div>
           <h4 class="card-title">{{ post.title }}</h4>
@@ -484,6 +492,7 @@
       {% endfor %}
     </div>
     {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+
   </div>
 </div>
 {% if post_list.has_other_pages %}
@@ -499,10 +508,15 @@
   </nav>
 </div>
 {% endif %}
+<!--<div class="container py-5">
+    <iframe src="https://free.timeanddate.com/countdown/i8c0t9bd/n4/cf110/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pca0bfd5/tc66c/fs100/szw320/szh135/tatTime%20left%20to%20Cultural%20Exhibition%2022/tac000/tptTime%20since%20Event%20started%20in/tpc000/matTantra%20Hill/mac000/mpc000/iso2022-05-27T17:03:00" allowtransparency="true" frameborder="0" width="320" height="135"></iframe>
+
+</div>-->
+<iframe src="https://free.timeanddate.com/countdown/i8dj6g8u/cf109/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tceac8d5/fs100/szw320/szh135/tatJulius's%20Birthday/tac000/tptCreators%20Birthday/tpc000/mac000/mpc000/iso2022-06-21T11:50:58/bo2" allowtransparency="true" frameborder="0" width="322" height="137" style="align-items:center;"></iframe>
+
 
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-4bd0c571-5c22-4da1-9a03-9880f1d24b11"></div>
-
+<div class="elfsight-app-9647cf15-d863-4b77-a683-47958d5bd134"></div>
   </div>
 </div>
 

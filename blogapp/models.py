@@ -63,3 +63,21 @@ class AboutUs(models.Model):
 
     def __str__(self):
         return self.header
+
+
+
+class ContactUs(models.Model):
+
+    firstname = models.CharField(max_length=50, blank=False, null=False)
+    lastname = models.CharField(max_length=200,blank=False, null=False)
+    email = models.EmailField()
+    forms_need = models.CharField(max_length=200, blank=False, null=False)
+    de_message = models.TextField()
+
+
+    class Meta:
+
+        verbose_name_plural = "Contact Us"
+
+    def __str__(self):
+        return self.firstname

@@ -1,9 +1,10 @@
 from django.shortcuts import render
-from .models import Post, AboutUs
+from .models import Post, AboutUs,ContactUs
 from django.views import generic
 from .forms import CommentForm
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
+from django.contrib import messages
 
 
 # Create your views here.
@@ -72,8 +73,23 @@ def AboutMe(request):
     return render (request, 'aboutme.html',context)
 
 def Contact(request):
-    context = {}
+    contact_us = ContactUs.objects.all()
+    if request.method == "POST":
+        firstname = request.POST['firstname']
+        lastname = request.POST['surname']
+        email = request.POST['email']
+        needs = request.POST['need']
+        de_message = request.POST['message']
 
+
+        contact_form = ContactUs(firstname=firstname,lastname=lastname,email=email,forms_need=needs, de_message=de_message)
+        contact_form.save()
+        messages.success(request,"Your messages has been sent successfully our representative will reach out to you in a short time 😎")
+
+
+    context={
+        'contact_us':contact_us
+    }
     return render(request, 'contact.html', context)
 
 

@@ -1,0 +1,87 @@
+{% extends 'base.html' %} {% block content %}
+
+<style>
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    background-image: url("https://source.unsplash.com/random/?computers,programmers,hackers");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+  }
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 card mb-4 mt-3 left top">
+      <div class="card-body">
+        <h2>{% block title %} <strong> {{ post.title }}</strong> {% endblock title %}</h2>
+        <p class="text-muted"><i class="fas fa-user-tie"></i> <small>{{ post.author }} |</small> <i class="far fa-clock"></i>  <small>{{ post.created_on }}</small></p>
+        <p class="card-text">{{ post.content | safe }}</p>
+        <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://store-12.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    </div>
+    {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+     <div class="col-md-8 card mb-4 mt-3">
+      <div class="card-body">
+        <!-- comments -->
+        <h4> <strong> {{ comments.count }} Comments </strong></h4>
+        <small>Please take note your comments will be checked  before being approved, this is due to spam messages. Thank you</small>
+        <hr>
+
+        {% for comment in comments %}
+        <div class="comments" style="padding: 10px">
+          <p class="font-weight-bold">
+            {{ comment.name }}
+            <span class="text-muted font-weight-normal">
+              {{ comment.created_on }}
+            </span>
+          </p>
+          {{ comment.body | linebreaks }}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="col-md-8 card mb-4 mt-3">
+      <div class="card-body">
+        {% if new_comment %}
+        <div class="alert alert-success" role="alert">
+          Your comment is awaiting moderation
+        </div>
+        {% else %}
+        <h3>Leave a comment</h3>
+
+        {% load crispy_forms_tags %}
+
+        <form method="post" style="margin-top: 1.3em">
+          {{ comment_form | crispy }} {% csrf_token %}
+          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </form>
+        {% endif %}
+      </div>
+    </div>
+
+
+    </div>
+  </div>
+</div>
+{% endblock content %}

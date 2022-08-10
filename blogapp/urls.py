@@ -18,6 +18,7 @@ urlpatterns = [
     path('Steam/', views.Steam, name='Steam'),
     path('Xbox/', views.Xbox, name='xbox'),
     path('Verify/', views.Button, name='button'),
+    path('follome/', views.CheckMe, name='checkme'),
 
 
     path('<slug:slug>/', views.post_detail, name='post_detail'),

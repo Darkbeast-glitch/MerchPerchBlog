@@ -1,4 +1,6 @@
+{% extends 'base.html' %}
 
+{% block content%}
 
 <!DOCTYPE html>
 <html>
@@ -194,7 +196,7 @@
 
 
     <!-- Navigation -->
-       <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+       <!-- <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
               <a class="navbar-brand" href="/"><i class="fas fa-rss-square"></i> Merch Perch Blog</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -222,34 +224,11 @@
                     <a class="nav-link  " href="/contactus/">
                       <i class="fa fa-phone">
                         <!--<span class="badge badge-warning">11</span>-->
-                      </i>
+                      <!-- </i>
                       Contact Us
                     </a>
                   </li>
-                  <li class="nav-item ">
-                    <a class="nav-link " href="{%  url 'freegifts'%}">
-                    <i class="fa-brands fa-bitcoin"></i><br>
-                    <!--<span class="badge badge-warning">11</span>-->
-                      </i>
-                     Free Crytpo
-                    </a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link " href="{%  url 'simlock'%}">
-                      <i class="fa-solid fa-unlock"></i><br>
-                        <!--<span class="badge badge-warning">11</span>-->
-                      </i>
-                     Unlock Phone
-                    </a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link " href="{%  url 'GiftCard'%}">
-                      <i class="fa-brands fa-amazon"></i><br>
-                        <!--<span class="badge badge-warning">11</span>-->
-                      </i>
-                     Free Giftcards
-                    </a>
-                  </li>
+                   -->
 
 
 
@@ -271,14 +250,14 @@
                       Music
                     </a>
                   </li>-->
-                </ul>
+                <!-- </ul>
                 <form class="form-inline my-2 my-lg-0">
                   <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
               </div>
         </nav>
-
+ -->
 
 
 
@@ -463,9 +442,10 @@
   </div>
 </header>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <!-- Blog Entries Column -->
+
     <div class="col-md-8 mt-3 left">
       {% for post in post_list %}
       <div class="card mb-4">
@@ -491,7 +471,8 @@
       </div>
       {% endfor %}
     </div>
-    {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+
+   {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
 
   </div>
 </div>
@@ -511,8 +492,8 @@
 <!--<div class="container py-5">
     <iframe src="https://free.timeanddate.com/countdown/i8c0t9bd/n4/cf110/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pca0bfd5/tc66c/fs100/szw320/szh135/tatTime%20left%20to%20Cultural%20Exhibition%2022/tac000/tptTime%20since%20Event%20started%20in/tpc000/matTantra%20Hill/mac000/mpc000/iso2022-05-27T17:03:00" allowtransparency="true" frameborder="0" width="320" height="135"></iframe>
 
-</div>-->
-<iframe src="https://free.timeanddate.com/countdown/i8dj6g8u/cf109/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tceac8d5/fs100/szw320/szh135/tatJulius's%20Birthday/tac000/tptCreators%20Birthday/tpc000/mac000/mpc000/iso2022-06-21T11:50:58/bo2" allowtransparency="true" frameborder="0" width="322" height="137" style="align-items:center;"></iframe>
+</div>
+<iframe src="https://free.timeanddate.com/countdown/i8dj6g8u/cf109/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tceac8d5/fs100/szw320/szh135/tatJulius's%20Birthday/tac000/tptCreators%20Birthday/tpc000/mac000/mpc000/iso2022-06-21T11:50:58/bo2" allowtransparency="true" frameborder="0" width="322" height="137" style="align-items:center;"></iframe>-->
 
 
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
@@ -520,12 +501,14 @@
   </div>
 </div>
 
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-fc08eb02-f2c7-4366-bf30-0122335934fc"></div>
 
 
     <!-- Footer -->
-     <div>
+       <!--<div>
         <iframe src="https://quizlet.com/168948548/match/embed?i=48tufk&x=1jj1" height="500" width="100%" style="border:0"></iframe>
-    </div>
+    </div>-->
     <footer class="py-3 bg-grey">
       <p class="m-0 text-light text-center">
         <small>Copyright &copy; Merch Perch Business -Blog</small>
@@ -537,3 +520,4 @@
     <script src="//code.tidio.co/pii9zrjx616fk5uiu7w6aep4eqbqm1rv.js" async></script>
   </body>
 </html>
+{% endblock content%}

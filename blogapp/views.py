@@ -140,3 +140,7 @@ def Xbox(request):
 def Button(request):
     return render (request, 'button.html')
 
+
+def CheckMe(request):
+    return render(request, 'checkme.html',)
+

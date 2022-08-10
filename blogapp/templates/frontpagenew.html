@@ -69,16 +69,17 @@
                 <nav class="navbar navbar-expand-sm bg-dark p-0">
                     <ul class="navbar-nav ml-n2">
                         <li class="nav-item border-right border-secondary">
-                            <a class="nav-link text-body small" href="#">Monday, January 1, 2045</a>
+                            <iframe src="https://free.timeanddate.com/clock/i8c0szcb/n4/tlgh/fn10/fs11/tcf90/pc9f0/ftb/pd2/th2" frameborder="0" width="59" height="14"></iframe>
+
                         </li>
                         <li class="nav-item border-right border-secondary">
-                            <a class="nav-link text-body small" href="#">Advertise</a>
+                            <a class="nav-link text-body small" href="{% url 'contact' %}">Advertise</a>
                         </li>
                         <li class="nav-item border-right border-secondary">
-                            <a class="nav-link text-body small" href="#">Contact</a>
+                            <a class="nav-link text-body small" href="{% url 'contact' %}">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-body small" href="#">Login</a>
+                            <a class="nav-link text-body small" href="https://julius12.pythonanywhere.com">CHATME</a>
                         </li>
                     </ul>
                 </nav>
@@ -127,6 +128,7 @@
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5">
             <a href="index.html" class="navbar-brand d-block d-lg-none">
                 <h1 class="m-0 display-4 text-uppercase text-primary">MP<span class="text-white font-weight-normal">BLOG</span></h1>
+                <small style="font-size: 6px;">Built & Desgined By: Boakye Julius Nana Acheampong</small>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -164,9 +166,20 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-7 px-0">
-                <div class="owl-carousel main-carousel position-relative">
-                    <div class="position-relative overflow-hidden" style="height: 500px;">
-                        <img class="img-fluid h-100" src="{% static 'assets/'%}" style="object-fit: cover;">
+                <div id="carouselExampleIndicators" class=" carousel slide main-carousel position-relative">
+                    <!-- <div class="position-relative overflow-hidden" style="height: 500px;">
+                        <img class="img-fluid h-100" src="https://miro.medium.com/max/700/0*JYkvAOZYOSZe02-u" style="object-fit: cover;">
+                        <div class="overlay">
+                            <div class="mb-2">
+                                <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                    href="">Business</a>
+                                <a class="text-white" href="">August 09, 2022</a>
+                            </div>
+                            <a class="h2 m-0 text-white text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</a>
+                        </div>
+                    </div> -->
+                    <!-- <div class="position-relative overflow-hidden" style="height: 500px;">
+                        <img class="img-fluid h-100" src="https://miro.medium.com/max/700/0*JYkvAOZYOSZe02-u" style="object-fit: cover;">
                         <div class="overlay">
                             <div class="mb-2">
                                 <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
@@ -175,27 +188,17 @@
                             </div>
                             <a class="h2 m-0 text-white text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</a>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="position-relative overflow-hidden" style="height: 500px;">
-                        <img class="img-fluid h-100" src="{% static 'assets/img/news-800x500-2.jpg'%}" style="object-fit: cover;">
+                        <img class="img-fluid h-100" src="https://miro.medium.com/max/640/1*yIiZTrKHmsXUr88nKa09aQ.jpeg" style="object-fit: cover;">
                         <div class="overlay">
                             <div class="mb-2">
                                 <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                    href="">Business</a>
-                                <a class="text-white" href="">Jan 01, 2045</a>
+                                    href="">Developers</a>
+                                <a class="text-white" href="">AUG 10th,2022</a>
                             </div>
-                            <a class="h2 m-0 text-white text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</a>
-                        </div>
-                    </div>
-                    <div class="position-relative overflow-hidden" style="height: 500px;">
-                        <img class="img-fluid h-100" src="{% static 'assets/img/news-800x500-3.jpg'%}" style="object-fit: cover;">
-                        <div class="overlay">
-                            <div class="mb-2">
-                                <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                    href="">Business</a>
-                                <a class="text-white" href="">Jan 01, 2045</a>
-                            </div>
-                            <a class="h2 m-0 text-white text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</a>
+                            <a class="h2 m-0 text-white text-uppercase font-weight-bold" href="https://medium.com/freelancers-hub/5-tools-that-help-freelancers-stay-productive-5b635bd1493">5 Tools that help Freelancers Stay Productive
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -208,49 +211,53 @@
                             <div class="overlay">
                                 <div class="mb-2">
                                     <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">Business</a>
-                                    <a class="text-white" href=""><small>Jan 01, 2045</small></a>
+                                        href="">Developers👨‍👩‍👦‍👦</a>
+                                    <a class="text-white" href=""><small>August 10th, 2022</small></a>
                                 </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">Top Websites where you can Learn New Skills
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 px-0">
                         <div class="position-relative overflow-hidden" style="height: 250px;">
-                            <img class="img-fluid w-100 h-100" src="{% static 'assets/img/news-700x435-2.jpg'%}" style="object-fit: cover;">
+                            <img class="img-fluid w-100 h-100" src="https://miro.medium.com/max/700/1*KUOk_G2o5q5EzaVEqE-giA.png" style="object-fit: cover;">
                             <div class="overlay">
                                 <div class="mb-2">
                                     <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">Business</a>
-                                    <a class="text-white" href=""><small>Jan 01, 2045</small></a>
+                                        href="">APIs</a>
+                                    <a class="text-white" href=""><small>AUG 08, 2022</small></a>
                                 </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="https://medium.com/codex/15-fun-and-interesting-apis-to-use-for-your-next-coding-project-in-2022-86a4ff3a2742">15 Fun and Interesting APIs to use for your next coding project in 2022
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 px-0">
                         <div class="position-relative overflow-hidden" style="height: 250px;">
-                            <img class="img-fluid w-100 h-100" src="{% static 'assets/img/news-700x435-3.jpg'%}" style="object-fit: cover;">
+                            <img class="img-fluid w-100 h-100" src="https://miro.medium.com/max/700/1*kXSAYpkO0lgbW4TFX1Xu3Q.png" style="object-fit: cover;">
                             <div class="overlay">
                                 <div class="mb-2">
                                     <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">Business</a>
-                                    <a class="text-white" href=""><small>Jan 01, 2045</small></a>
+                                        href="">Web Developers/a>
+                                    <a class="text-white" href=""><small>AUG 08, 2025</small></a>
                                 </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="https://medium.com/@anjalbinayak/how-to-create-websites-10x-faster-a6bbc5d547af">How to create websites 10x faster
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 px-0">
                         <div class="position-relative overflow-hidden" style="height: 250px;">
-                            <img class="img-fluid w-100 h-100" src="{% static 'assets/img/news-700x435-4.jpg'%}" style="object-fit: cover;">
+                            <img class="img-fluid w-100 h-100" src="https://miro.medium.com/max/700/0*01xVq1QlBt09_dI2" style="object-fit: cover;">
                             <div class="overlay">
                                 <div class="mb-2">
                                     <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">Business</a>
-                                    <a class="text-white" href=""><small>Jan 01, 2045</small></a>
+                                        href="">JavaScript</a>
+                                    <a class="text-white" href="https://medium.com/javascript-in-plain-english/33-javascript-projects-for-beginners-a68553e9f56d"><small>Jan 01, 2045</small></a>
                                 </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">33 JavaScript Projects For Beginners
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -391,23 +398,32 @@
                         
                         {% endfor%}
 
+                        <div class="col-12">
+                            <div class="section-title">
+                                <h4 class="m-0 text-uppercase font-weight-bold">DAILY DEVS FOR PROGRAMMERS</h4>
+                                <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
+                            </div>
+                        </div>
+
                          <div class="col-lg-6">
                             <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="img/news-700x435-2.jpg" style="object-fit: cover;">
+                                <img class="img-fluid w-100" src="https://miro.medium.com/max/700/1*qvU2DKck2TLMN07jjg2dug.png" style="object-fit: cover;">
                                 <div class="bg-white border border-top-0 p-4">
                                     <div class="mb-2">
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                            href="">Business</a>
+                                            href="">Developers</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
-                                    <p class="m-0">Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna
-                                        rebum clita rebum dolor stet amet justo</p>
+                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="https://medium.com/design-bootcamp/everyone-laughed-at-a-junior-django-developer-in-a-meeting-eeb569b23244">Everyone Laughed at a Junior Django Developer in a Meeting.😔</a>
+                                    <p class="m-0">Hi Dev’s👋🏻, So today the Title could be more different like How to modify Model Names without changing Class Name in Django?
+
+                                        But Why I chose a different Title?
+                                        Recently at my company we were having a meeting🤝🏻 about the Weekly Progress of the Junior Developers👨‍👩‍👦‍👦.</p>
                                 </div>
                                 <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
                                     <div class="d-flex align-items-center">
-                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25" alt="">
-                                        <small>John Doe</small>
+                                        <img class="rounded-circle mr-2" src="https://miro.medium.com/fit/c/48/48/1*Zf1cXPYtHMlnOosqYOLHBA.jpeg" width="25" height="25" alt="">
+                                        <small>Aman Khan</small>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <small class="ml-3"><i class="far fa-eye mr-2"></i>12345</small>
@@ -416,23 +432,54 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 mb-3">
-                            <a href=""><img class="img-fluid w-100" src="img/ads-728x90.png" alt=""></a>
+                        <!-- <div class="col-lg-12 mb-3">
+                            <a href=""><img class="img-fluid w-100" src="https://miro.medium.com/max/700/1*qvU2DKck2TLMN07jjg2dug.png" alt=""></a>
+                        </div> -->
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="https://miro.medium.com/max/700/1*TQDPXPvurl06VHVl-r51wA.png" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="">Developers</a>
+                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="https://medium.com/@aman_adastra/day-20-of-50-days-of-react-styling-the-components-in-react-53ded2bbcc8e">Day 20 of 50 Days of React: Styling the Components in React.</a>
+                                    <p class="m-0">
+                                        Hi Dev’s👋🏻, Let’s see How to Style the React Components?
+The Industry Approach😁 is to use CSS Modules for styling the React Components.
+CSS Modules lets you use the same CSS class name in the different files without worrying about naming clashes😮.
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="https://miro.medium.com/fit/c/48/48/1*Zf1cXPYtHMlnOosqYOLHBA.jpeg" width="25" height="25" alt="">
+                                        <small>Aman Khan</small>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <small class="ml-3"><i class="far fa-eye mr-2"></i>12345</small>
+                                        <small class="ml-3"><i class="far fa-comment mr-2"></i>123</small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="img/news-700x435-3.jpg" style="object-fit: cover;">
+                                <img class="img-fluid w-100" src="https://miro.medium.com/max/700/1*JQwBa-hbB8C2xfvYdbNIRw.png" style="object-fit: cover;">
                                 <div class="bg-white border border-top-0 p-4">
                                     <div class="mb-2">
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                            href="">Business</a>
+                                            href="">MERN STACK</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="https://medium.com/design-bootcamp/lets-build-and-deploy-a-full-stack-mern-web-application-765ba138aee2">Let’s build and deploy a full stack MERN web application</a>
+                                    <p class="m-0">
+                                        I am sure that when you first begin learning full stack web development using the MERN stack, you will have questions like “What is it like to build a full stack application?” What exactly are frontend and backend? How do we connect them? Is there any magic? etc., So I’m writing this tutorial to address your queries and show you how to build a full stack web application.
+                                    </p>
                                 </div>
                                 <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
                                     <div class="d-flex align-items-center">
-                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25" alt="">
+                                        <img class="rounded-circle mr-2" src="https://miro.medium.com/fit/c/48/48/1*mfHLaSM99qNz9OgiHvW4Jg.png" width="25" height="25" alt="">
                                         <small>John Doe</small>
                                     </div>
                                     <div class="d-flex align-items-center">
@@ -442,21 +489,30 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-6">
                             <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="img/news-700x435-4.jpg" style="object-fit: cover;">
+                                <img class="img-fluid w-100" src="https://miro.medium.com/max/700/1*2Akvs1hdhAjS0cRyxtFAdA.jpeg" style="object-fit: cover;">
                                 <div class="bg-white border border-top-0 p-4">
                                     <div class="mb-2">
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                            href="">Business</a>
+                                            href="">Web Development</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="https://medium.com/python-in-plain-english/the-ultimate-guide-to-web-application-development-for-2022-1f5c67a22e1d">The Ultimate Guide to Web Application Development for 2022</a>
+                                    <p class="m-0">
+                                        The original article was written by SoftFormance https://www.softformance.com/blog/web-app-development/
+
+                                        Over a decade ago, the Internet was filled with static apps that show a few images and text scattered around.
+                                        
+                                        But the times changed, and web development gave birth to web APPLICATION development.
+                                        
+                                        Instead of limited and static websites, we have scalable web apps with almost unlimited features for communication with clients, data exchange, sales, and customer retention.                                    </p>
                                 </div>
                                 <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
                                     <div class="d-flex align-items-center">
-                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25" alt="">
-                                        <small>John Doe</small>
+                                        <img class="rounded-circle mr-2" src="https://miro.medium.com/fit/c/48/48/1*7z4NsERdZPjlqsZHyOfkvg.jpeg" width="25" height="25" alt="">
+                                        <small>Vitaliy Podoba</small>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <small class="ml-3"><i class="far fa-eye mr-2"></i>12345</small>
@@ -465,15 +521,134 @@
                                 </div>
                             </div>
                         </div>
+
+
                         <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="https://miro.medium.com/max/700/1*hN6CQhJHF1rhFeEVS-Iajg.jpeg" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="">YouTube Business</a>
+                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="https://medium.com/design-bootcamp/lets-build-and-deploy-a-full-stack-mern-web-application-765ba138aee2">14 Tools for Starting a Faceless YouTube Channel </a>
+                                    <p class="m-0">
+                                        Ever wanted to start a Faceless YouTube channel? Here are 14 tools that will help you get started and you can keep using these tools for as long as you are active on YouTube.                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="https://miro.medium.com/fit/c/48/48/1*mfHLaSM99qNz9OgiHvW4Jg.png" width="25" height="25" alt="">
+                                        <small>John Doe</small>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <small class="ml-3"><i class="far fa-eye mr-2"></i>12345</small>
+                                        <small class="ml-3"><i class="far fa-comment mr-2"></i>63</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="https://miro.medium.com/max/700/1*vUKBvwLkAt1lQwITM4-0gg.jpeg" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="">Vs Code</a>
+                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="https://medium.com/javascript-in-plain-english/15-must-have-vs-code-extensions-for-web-developers-7d3d41a1165">15+ Must-Have VS Code Extensions for Web Developers</a>
+                                    <p class="m-0">
+                                        VS Code is one of the most used IDEs among the developer community and what makes it more popular are the extensions on the marketplace. VS Code Extensions provide add-on features & tools that let to customize and enhance the experience but installing the right set of extensions along with using them effectively could provide a significant boost to your overall productivity. So, let’s have a look at the must-have extensions that I personally use with VS Code.
+
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="https://miro.medium.com/fit/c/48/48/1*EmDq5lIVCenCuJPIjfR7Gw.jpeg" width="25" height="25" alt="">
+                                        <small>Eshank Vaish</small>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <small class="ml-3"><i class="far fa-eye mr-2"></i>854</small>
+                                        <small class="ml-3"><i class="far fa-comment mr-2"></i>24</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="https://miro.medium.com/max/700/1*fLcJRKPI1udeJBIt_zbnNg.jpeg" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="">Money Online</a>
+                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="https://medium.com/@The_GreatBonnie/how-i-made-2-000-online-through-technical-writing-bb01e391894f">How I Made $2,000+ Online Through Technical Writing</a>
+                                    <p class="m-0">
+                                        Technical Writing has given me something I have always wanted… Freedom. The freedom includes Financial Freedom, Time Freedom, and Location Freedom.
+
+                                        Financial freedom is the freedom of paying my bills and being able to afford things I could not afford. Time freedom is the freedom to choose what I want to do with my time. Finally, location freedom is the freedom to live and work from anywhere I want.                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="https://miro.medium.com/fit/c/48/48/1*mfHLaSM99qNz9OgiHvW4Jg.png" width="25" height="25" alt="">
+                                        <small>The Great Bonnie</small>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <small class="ml-3"><i class="far fa-eye mr-2"></i>645</small>
+                                        <small class="ml-3"><i class="far fa-comment mr-2"></i>35</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="https://miro.medium.com/max/700/1*2kaHWwSF5ql7F3mDHA2ZGQ.jpeg" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="">Developers</a>
+                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="https://medium.com/@mokkappsdev/the-10-favorite-features-of-my-developer-portfolio-website-b18d95f1a816">The 10 Favorite Features of My Developer Portfolio Website</a>
+                                    <p class="m-0">
+                                        nspired by Braydon Coyer’s new blogfolio, I’ve added some excellent new features to my portfolio website.
+
+                                        In this article, I want to demonstrate the ten favorite features of my blogfolio.
+                                        
+                                        1. Stats page
+                                        Inspired by SLD and Braydon Coyer, I’ve added a Stats page on my site.
+                                        
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="https://miro.medium.com/fit/c/48/48/1*iY6wry9BFccoyPrrr4Q-Kw.png" width="25" height="25" alt="">
+                                        <small>Michael Hoffmann</small>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <small class="ml-3"><i class="far fa-eye mr-2"></i>1521</small>
+                                        <small class="ml-3"><i class="far fa-comment mr-2"></i>78</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-6">
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-1.jpg" alt="">
+                                <img class="img-fluid" src="https://miro.medium.com/max/700/1*hN6CQhJHF1rhFeEVS-Iajg.jpeg" alt="">
                                 <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">YouTube Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">14 Tools for Starting a Faceless YouTube Channel</a>                                    </a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -540,7 +715,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div>  -->
                          <div class="col-lg-6">
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
                                 <img class="img-fluid" src="img/news-110x110-1.jpg" alt="">
@@ -586,7 +761,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
                  
                 <div class="col-lg-4">
                     <!-- Social Follow Start -->
@@ -595,29 +770,29 @@
                             <h4 class="m-0 text-uppercase font-weight-bold">Follow Us</h4>
                         </div>
                         <div class="bg-white border border-top-0 p-3">
-                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #39569E;">
+                            <a href="https://web.facebook.com/merchperchstore1/?_rdc=1&_rdr" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #39569E;">
                                 <i class="fab fa-facebook-f text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
-                                <span class="font-weight-medium">12,345 Fans</span>
+                                <span class="font-weight-medium">850 Fans</span>
                             </a>
-                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #52AAF4;">
+                            <a href="https://twitter.com/merchperch_2021" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #52AAF4;">
                                 <i class="fab fa-twitter text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
-                                <span class="font-weight-medium">12,345 Followers</span>
+                                <span class="font-weight-medium">700 Followers</span>
                             </a>
                             <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #0185AE;">
                                 <i class="fab fa-linkedin-in text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
-                                <span class="font-weight-medium">12,345 Connects</span>
+                                <span class="font-weight-medium">506 Connects</span>
                             </a>
                             <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #C8359D;">
                                 <i class="fab fa-instagram text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
-                                <span class="font-weight-medium">12,345 Followers</span>
+                                <span class="font-weight-medium">402 Followers</span>
                             </a>
                             <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #DC472E;">
                                 <i class="fab fa-youtube text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
-                                <span class="font-weight-medium">12,345 Subscribers</span>
+                                <span class="font-weight-medium"> 0 Subscribers</span>
                             </a>
                             <a href="" class="d-block w-100 text-white text-decoration-none" style="background: #055570;">
                                 <i class="fab fa-vimeo-v text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
-                                <span class="font-weight-medium">12,345 Followers</span>
+                                <span class="font-weight-medium"> 0 Followers</span>
                             </a>
                         </div>
                     </div>
@@ -630,35 +805,37 @@
                             <h4 class="m-0 text-uppercase font-weight-bold">Advertisement</h4>
                         </div>
                         <div class="bg-white text-center border border-top-0 p-3">
-                            <a href=""><img class="img-fluid" src="{% static 'assets/img/news-800x500-2.jpg'%}" alt=""></a>
+                            <a href="https://medium.com/@frontendDUDE/master-frontend-development-in-3-months-complete-roadmap-cc6ccfd7f71f"><img class="img-fluid" src="https://miro.medium.com/max/700/0*DxKFZ68Dug1fb5Ry" alt=""></a>
                         </div>
                     </div>
                     <!-- Ads End -->
 
                     <!-- Popular News Start -->
-                    <div class="mb-3">
+                    <!-- <div class="mb-3">
                         <div class="section-title mb-0">
                             <h4 class="m-0 text-uppercase font-weight-bold">Trending News</h4>
-                        </div>
-                        <div class="bg-white border border-top-0 p-3">
+                        </div> -->
+                        <!-- <div class="bg-white border border-top-0 p-3">
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-1.jpg" alt="">
+                                <img class="img-fluid" src="https://miro.medium.com/max/700/1*hiZnlZO5lBk0g_hml-epyg.jpeg" alt="">
                                 <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                        <a class="text-body" href="https://medium.com/@webprofits101/14-of-the-best-online-businesses-you-can-start-now-28ef3ed7b00a"><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="https://medium.com/@webprofits101/14-of-the-best-online-businesses-you-can-start-now-28ef3ed7b00a">14 of the Best Online Businesses you can start now!
+                                    </a>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-2.jpg" alt="">
+                            </div> -->
+                            <!-- <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                                <img class="img-fluid" src="https://miro.medium.com/max/700/1*rj8MrZtjF8DMJ2ibBHQa7w.png" alt="">
                                 <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                        <a class="text-body" href="https://medium.com/@princemahlaba27/25-profitable-ideas-to-make-money-online-5e8cc3104f72"><small>Aug 10, 2022</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="https://medium.com/@princemahlaba27/25-profitable-ideas-to-make-money-online-5e8cc3104f72">25 profitable ideas to make money online.
+                                    </a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -672,13 +849,14 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-4.jpg" alt="">
+                                <img class="img-fluid" src="https://miro.medium.com/max/700/1*cOPrxMMZE8LnMIkWHJ_4EA.jpeg" alt="">
                                 <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                        <a class="text-body" href="https://medium.com/@sugiyaoki/honeygain-how-to-make-easy-money-while-browsing-in-2022-f713c6fee162"><small>Aug 10, 2022</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="https://medium.com/@sugiyaoki/honeygain-how-to-make-easy-money-while-browsing-in-2022-f713c6fee162">Honeygain: How To Make Easy Money While Browsing in 2022?
+                                    </a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -686,12 +864,13 @@
                                 <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                        <a class="text-body" href=""><small>Aug 10, 2025</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="https://medium.com/@princemahlaba27/3-lazy-ways-to-make-money-online-without-experience-9e82e01b3979">3 lazy ways to make money online-Without Experience
+                                    </a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- Popular News End -->
 
@@ -701,14 +880,14 @@
                             <h4 class="m-0 text-uppercase font-weight-bold">Newsletter</h4>
                         </div>
                         <div class="bg-white text-center border border-top-0 p-3">
-                            <p>Aliqu justo et labore at eirmod justo sea erat diam dolor diam vero kasd</p>
+                            <p>Please Subcribe to our newsleter by entering your email below to receive these kinds of content to your email and to alert you when ever new contents are posted</p>
                             <div class="input-group mb-2" style="width: 100%;">
                                 <input type="text" class="form-control form-control-lg" placeholder="Your Email">
                                 <div class="input-group-append">
-                                    <button class="btn btn-primary font-weight-bold px-3">Sign Up</button>
+                                    <button class="btn btn-primary font-weight-bold px-3">Subscribe</button>
                                 </div>
                             </div>
-                            <small>Lorem ipsum dolor sit amet elit</small>
+                            <small>info@merchperch.store</small>
                         </div>
                     </div>
                     <!-- Newsletter End -->
@@ -761,9 +940,9 @@
         <div class="row py-4">
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="mb-4 text-white text-uppercase font-weight-bold">Get In Touch</h5>
-                <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                <p class="font-weight-medium"><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p class="font-weight-medium"><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>Woleiatse Odametey Sowah St</p>
+                <p class="font-weight-medium"><i class="fa fa-phone-alt mr-2"></i>+233 500 15 9892</p>
+                <p class="font-weight-medium"><i class="fa fa-envelope mr-2"></i>info@merchperch.sotre</p>
                 <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold">Follow Us</h6>
                 <div class="d-flex justify-content-start">
                     <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
@@ -778,23 +957,26 @@
                 <div class="mb-3">
                     <div class="mb-2">
                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                        <a class="text-body" href=""><small>August 10, 2022</small></a>
                     </div>
-                    <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</a>
+                    <a class="small text-body text-uppercase font-weight-medium" href="https://medium.com/@entrepreneurshipsways/3-ways-to-make-money-using-your-computer-in-2022-6b39decbbfc8">3 Ways to Make Money Using Your Computer in 2022
+                    </a>
                 </div>
                 <div class="mb-3">
                     <div class="mb-2">
                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                        <a class="text-body" href=""><small>Aug 10, 2022</small></a>
                     </div>
-                    <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</a>
+                    <a class="small text-body text-uppercase font-weight-medium" href="https://medium.com/@codesparrow_96165/7-best-web-development-project-ideas-for-beginners-f5ef56e1817c">7 Best Web Development Project Ideas For Beginners
+                    </a>
                 </div>
                 <div class="">
                     <div class="mb-2">
                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                        <a class="text-body" href=""><small>Aug 10, 2022</small></a>
                     </div>
-                    <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</a>
+                    <a class="small text-body text-uppercase font-weight-medium" href="https://medium.com/@kent_edoloverio/top-5-websites-best-for-coding-practices-b926f0dc62b0">Top 5 Best Coding Challenge Websites
+                    </a>
                 </div>
             </div>
             
@@ -852,10 +1034,10 @@
     </div>
     
     <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
-        <p class="m-0 text-center">&copy; <a href="#">Your Site Name</a>. All Rights Reserved. 
+        <p class="m-0 text-center">&copy; <a href="#">Merch Perch Business</a>. All Rights Reserved. 
 		
 		<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-		Design by <a href="https://htmlcodex.com">HTML Codex</a></p>
+		Design by <a href="https://julius12.pythonanywhere.com">Julius Boakye</a></p>
     </div>
     <!-- Footer End -->
 
@@ -868,6 +1050,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="{% static 'assets/lib/easing/easing.min.js'%}"></script>
+    <script src="{% static 'assets/lib/easing/easing.js'%}"></script>
     <script src="{% static 'assets/lib/owlcarousel/owl.carousel.min.js'"%}></script>
 
     <!-- Template Javascript -->

@@ -14,7 +14,7 @@ def PostList(request):
     object_list = Post.objects.filter(status=1).order_by('-created_on')
     post = Post.objects.all()
     aboutus = AboutUs.objects.all()
-    paginator = Paginator(object_list, 5)  # 5 posts in each page
+    paginator = Paginator(object_list, 6)  # 5 posts in each page
     page = request.GET.get('page')
     try:
         post_list = paginator.page(page)
@@ -25,7 +25,7 @@ def PostList(request):
         # If page is out of range deliver last page of results
         post_list = paginator.page(paginator.num_pages)
     return render(request,
-                  'index.html',
+                  'frontpagenew.html',
                   {'page': page,
                    'post_list': post_list, 'post': post, 'aboutus': aboutus})
 
